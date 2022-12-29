@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'oems_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'mytestdb',
+        'NAME': 'oems',
         'USER': '',
         'PASSWORD': '',
         'HOST': 'localhost',

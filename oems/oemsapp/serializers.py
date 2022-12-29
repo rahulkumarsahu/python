@@ -1,14 +1,9 @@
 from rest_framework import serializers
-from oemsapp.models import Departments, Employees
-
-
-class DepartmentSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Departments
-        fields = ('DepartmentId', 'DepartmentName')
+from oemsapp.models import Employees
 
 
 class EmployeeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Employees
-        fields = ('EmployeeId', 'EmployeeName', 'Department', 'DateOfJoining', 'PhotoFileName')
+        fields = ('EmployeeId', 'EmployeeName', 'Salary', 'Bonus', 'PhoneNumber', 'Role', 'Department',
+                  'Location', 'DateOfJoining')
